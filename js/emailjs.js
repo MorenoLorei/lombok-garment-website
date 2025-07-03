@@ -13,7 +13,7 @@ function sendMail(event) {
         message: document.getElementById("message").value,
     };
 
-    emailjs.send("service_977xpzk", "template_oqi8uwk", parms)
+    emailjs.send("service_r5w0zqg", "template_1t6bpjp", parms)
         .then(function(response) {
             alert("Email sent!");
         }, function(error) {

@@ -81,12 +81,37 @@ nav .navbar-nav .nav-link:hover {
     width: 100%;
 }
 .home-content h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .home-content p{
     text-align: center;
     font-size: 1rem;
     margin: 1rem 0;
+}
+
+
+.product-type {
+    width: 100%;
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.product-type-title h2{
+    text-align: center;
+    letter-spacing: 10px;
+}
+.product-type-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* adjust spacing as needed */
+    justify-content: center;
+}
+
+.product-type-content ul li {
+    border-radius: 10px;
+    white-space: nowrap;
 }
 
 

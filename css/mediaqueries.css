@@ -1,10 +1,19 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 755px) {
     .home-content h1 {
-        font-size: 8vw;
-        white-space: nowrap;
+        font-size: 5vw;
     }
     .home-content p {
-        font-size: 3vw;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home-content h1 {
+        text-wrap: nowrap;
+        font-size: 6vw;
+    }
+    .home-content p {
+        font-size: 4vw;
     }
     .contact-us-content {
         justify-content: center;
@@ -27,6 +36,16 @@
     }
     .material-color p {
         font-size: 5vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    .home-content h1 {
+        font-size: 6vw;
+        font-weight: 900;
+    }
+    .home-content p {
+        font-size: 3vw;
+        font-weight: 500;
     }
 }
 
