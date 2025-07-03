@@ -1,9 +1,9 @@
 @media screen and (max-width: 755px) {
     .home-content h1 {
-        font-size: 5vw;
+        font-size: clamp(2rem, 5vw, 3.5rem);
     }
     .home-content p {
-        font-size: 2vw;
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 }
 
@@ -64,5 +64,40 @@
     }
     .material-list li {
         white-space: nowrap;
+    }
+}
+/* Small phones */
+@media screen and (max-width: 360px) {
+    .contact-us-content h2 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        letter-spacing: 0.5rem;
+    }
+    
+    .card {
+        max-width: 280px;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 756px) and (max-width: 1024px) {
+    .materia {
+        gap: 5vw;
+    }
+    
+    .card-container {
+        gap: 1rem;
+    }
+    
+    .product-content h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1rem;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }
