@@ -1,0 +1,49 @@
+@media screen and (max-width: 640px) {
+    .home-content h1 {
+        font-size: 8vw;
+        white-space: nowrap;
+    }
+    .home-content p {
+        font-size: 3vw;
+    }
+    .contact-us-content {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .product-content h2 {
+        font-size: 4vw;
+        letter-spacing: 2vw;
+    }
+    .catalog-content h2 {
+        font-size: 4vw;
+        letter-spacing: 1vw;
+        white-space: nowrap;
+    }
+    .materia {
+        gap: 3vw;
+    }
+    .material-color p {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contact-us-content h2 {
+        font-size: 5vw;
+    }
+    .contact-us-content a,
+    .btn-primary {
+        width: 100% !important;
+        min-width: 120px;
+        white-space: nowrap;
+        display: block;
+        margin: 0 auto 1rem auto;
+        font-size: 4vw;
+    }
+    .material-list li {
+        white-space: nowrap;
+    }
+}
