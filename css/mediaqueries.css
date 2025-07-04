@@ -1,19 +1,11 @@
-@media screen and (max-width: 755px) {
-    .home-content h1 {
-        font-size: clamp(2rem, 5vw, 3.5rem);
-    }
-    .home-content p {
-        font-size: clamp(1rem, 2vw, 1.5rem);
-    }
-}
 
-@media screen and (max-width: 640px) {
+
+@media screen and (min-width: 640px) and (max-width: 755px) {
     .home-content h1 {
-        text-wrap: nowrap;
-        font-size: 6vw;
+        font-size: clamp(1rem, 6vw, 6rem);
     }
     .home-content p {
-        font-size: 4vw;
+        font-size: clamp(0.9rem, 1vw, 0.5rem);
     }
     .contact-us-content {
         justify-content: center;
@@ -38,48 +30,60 @@
         font-size: 5vw;
     }
 }
-@media screen and (max-width: 450px) {
+
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
     .home-content h1 {
-        font-size: 6vw;
-        font-weight: 900;
+        font-size: clamp(1rem, 5vw, 6rem);
     }
     .home-content p {
-        font-size: 3vw;
-        font-weight: 500;
+        font-size: clamp(0.9rem, 1vw, 2rem);
     }
-}
-
-@media screen and (max-width: 360px) {
     .contact-us-content h2 {
-        font-size: 5vw;
+        text-align: center;
+        font-size: clamp(1rem, 5vw, 6rem);
+    }
+    .contact-us-content p {
+        text-align: center;
+        font-size: clamp(0.9rem, 1vw, 2rem);
     }
     .contact-us-content a,
     .btn-primary {
         width: 100% !important;
         min-width: 120px;
         white-space: nowrap;
-        display: block;
         margin: 0 auto 1rem auto;
         font-size: 4vw;
     }
-    .material-list li {
+    .product-content h2 {
+        font-size: clamp(3rem, 8vw, 9rem);
+        letter-spacing: 2vw;
+    }
+    .catalog-content h2 {
+        font-size: 4vw;
+        letter-spacing: 1vw;
         white-space: nowrap;
     }
-}
-/* Small phones */
-@media screen and (max-width: 360px) {
-    .contact-us-content h2 {
-        font-size: clamp(1.5rem, 5vw, 2rem);
-        letter-spacing: 0.5rem;
+    .materia {
+        gap: 3vw;
     }
-    
-    .card {
-        max-width: 280px;
+    .material-color p {
+        font-size: clamp(1rem, 1vw, 5rem);
+    }
+    .material-list li {
+        font-size: clamp(1rem, 1vw, 5rem);
+        white-space: nowrap;
     }
 }
 
 /* Tablets */
-@media screen and (min-width: 756px) and (max-width: 1024px) {
+@media screen and (min-width: 755px) and (max-width: 1132px) {
+    .home-content h1 {
+        font-size: clamp(2rem, 5.5vw, 3.5rem);
+    }
+    .home-content p {
+        font-size: clamp(1rem, 1vw, 1rem);
+    }
     .materia {
         gap: 5vw;
     }
@@ -91,13 +95,5 @@
     .product-content h2 {
         font-size: 2.5rem;
         letter-spacing: 1rem;
-    }
-}
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
     }
 }

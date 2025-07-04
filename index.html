@@ -23,6 +23,9 @@
     <!-- Open Graph tags for social media -->
     <meta property="og:title" content="LOMBOK GARMENT DAN TEKSTIL - Konveksi Terpercaya">
     <meta property="og:description" content="Konveksi terpercaya untuk pakaian, tas, dan topi berkualitas tinggi di Lombok. Menerima pembuatan kaos, polo, jaket, almamater dengan harga terjangkau.">
+    <meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<link rel="canonical" href="https://www.lombokgarment.com/" />
     <meta property="og:image" content="./image/lombokgarment-logo (2).jpg">
     <meta property="og:url" content="[Your Website URL]">
 
@@ -48,7 +51,7 @@
     <script type="text/javascript">
        (function(){
           emailjs.init({
-            publicKey: "ipgMCL_J3x1-NuUvD",
+            publicKey: "LlYRstDK2_M175IVI",
           });
        })();
     </script>
@@ -58,7 +61,7 @@
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9P76JBD"
+<noscript><iframe data-gtm-src="https://www.googletagmanager.com/ns.html?id="
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar navbar-expand-sm  navbar-light" >
@@ -87,12 +90,12 @@
       <section class="home" id="home">
         <div class="home-content container-fluid">
           <h1 class="lato-bold">KONVEKSI LOMBOK GARMENT</h1>
-          <p class="lato-regular">Tempat terbaik untuk pakaian berkualitas tinggi dan terjangkau. Paling dipercaya. Paling dapat diandalkan.</p>
+            <p class="lato-thin">Tempat terbaik untuk pakaian berkualitas tinggi dan terjangkau. Paling dipercaya. Paling dapat diandalkan.</p>
         </div>
       </section>
       <section class="product-type">
         <div class="product-type-title mb-5">
-          <h2 class="lato-bold">JENIS PRODUK</h2>
+          <h2 class="lato-regular">JENIS PRODUK</h2>
         </div>
         <div class="product-type-content container-fluid justify-content-center">
           <ul class="lato-thin">
@@ -181,7 +184,7 @@
               <a href="https://drive.google.com/file/d/1VrWQ4oLgCs9KcpBZEtFxH_HiEO0zZVSd/view" class="btn btn-primary lato-thin">Lihat daftar warna</a>
             </div>
             <ul class="material-list mb-5">
-              <li>Cotton lacoste</li>
+              <li id="lacoste">Cotton lacoste</li>
               <li>Cotton combed 24S</li>
               <li>Cotton combed 30S</li>
               <li>Cotton combed 32S</li>
@@ -225,8 +228,7 @@
       <div class="container">
         <p class="mb-2 lato-thin">&copy; 2025 Lombok Garment. Hak cipta dilindungi undang-undang.</p>
         <p class="mb-0 lato-thin mb-3">
-          Ikuti kami:
-          <a href="https://www.instagram.com/garmentlombok/" target="_blank" class="mx-2">Instagram</a> |
+          Ikuti kami
           <a href="https://www.facebook.com/pages/CVLombok-Garment/217845978392106" target="_blank" class="mx-2">Facebook</a>
         </p>
         <p>Hari buka: senin sampai sabtu</p>
@@ -235,3 +237,18 @@
     </footer>
 </body>
 </html>
+<script type="module">
+    import { initGTM } from './js/gtm.js';
+    import { config } from './js/config.js';
+
+    try {
+        if (!config?.gtmId) {
+            throw new Error('GTM ID is not configured');
+        }
+        await initGTM();
+        console.log('GTM initialized successfully');
+    } catch (error) {
+        console.error('Failed to initialize GTM:', error);
+        // Add appropriate error handling/reporting
+    }
+</script>
