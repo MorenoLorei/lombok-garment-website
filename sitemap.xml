@@ -6,23 +6,25 @@
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
-   <!-- Add sections URLs -->
+   <!-- If you have real pages, add them like this: -->
+   <!--
    <url>
-      <loc>https://konveksilombokgarment.netlify.app/#product</loc>
+      <loc>https://konveksilombokgarment.netlify.app/about</loc>
       <lastmod>2025-07-04</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://konveksilombokgarment.netlify.app/#catalog</loc>
+      <loc>https://konveksilombokgarment.netlify.app/catalog</loc>
       <lastmod>2025-07-04</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://konveksilombokgarment.netlify.app/#contact</loc>
+      <loc>https://konveksilombokgarment.netlify.app/contact</loc>
       <lastmod>2025-07-04</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
+   -->
 </urlset>

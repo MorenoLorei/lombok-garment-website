@@ -3,13 +3,13 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
-Disallow: /js/config.js
-Disallow: /css/mediaqueries.css
+# Only disallow CSS/JS if they are not needed for rendering!
+# Disallow: /css/mediaqueries.css
+
 Disallow: /*.json$
 Disallow: /*.xml$
 Allow: /sitemap.xml
 
-# Block common crawlers to reduce server load
 User-agent: AhrefsBot
 Disallow: /
 
@@ -19,8 +19,4 @@ Disallow: /
 User-agent: SemrushBot
 Disallow: /
 
-# Sitemap
 Sitemap: https://konveksilombokgarment.netlify.app/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 10

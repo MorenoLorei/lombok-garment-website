@@ -50,24 +50,23 @@
     .contact-us-content a,
     .btn-primary {
         width: 100% !important;
-        min-width: 120px;
         white-space: nowrap;
         margin: 0 auto 1rem auto;
-        font-size: 4vw;
+        font-size: clamp(1rem, 3vw, 4rem);
     }
     .product-content h2 {
-        font-size: clamp(1rem, 4vw, 5rem);
+        font-size: clamp(1.5rem, 4vw, 5rem);
         letter-spacing: 2vw;
     }
     .catalog-content h2 {
-        font-size: 4vw;
+        font-size: clamp(1.5rem, 4vw, 5rem);
         letter-spacing: 1vw;
         white-space: nowrap;
     }
     .materia {
         gap: 3vw;
     }
-    .material-color p {
+    .material-color-list li {
         font-size: clamp(1rem, 1vw, 5rem);
     }
     .material-list li {
