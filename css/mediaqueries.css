@@ -68,10 +68,10 @@
         gap: 3vw;
     }
     .material-color-list li {
-        font-size: clamp(1rem, 1vw, 5rem);
+        font-size: clamp(0.9rem, 1vw, 5rem);
     }
     .material-list li {
-        font-size: clamp(1rem, 1vw, 5rem);
+        font-size: clamp(0.9rem, 1vw, 5rem);
         white-space: nowrap;
     }
 }

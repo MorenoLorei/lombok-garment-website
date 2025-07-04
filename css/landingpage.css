@@ -155,8 +155,8 @@ nav .navbar-nav .nav-link:hover {
     flex: 1 1 auto;
     background-color: #f8f8f8;
 }
-.card-body h5{
-    
+.card-body h3{
+    font-size: 1rem;
     color: #333;
 }
 .hat{
