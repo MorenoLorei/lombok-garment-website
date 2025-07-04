@@ -2,15 +2,17 @@
 <html lang="id">
 <head>
     <script type="module">
-        import config from './js/config.js';
+        import { initGTM } from './js/gtm.js';
 
         // GTM initialization
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl= 'dataLayer' !== l?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer',config.gtmId);
+        try {
+            await initGTM();
+            console.log('GTM initialized successfully');
+        } catch (error) {
+            console.error('Failed to initialize GTM:', error);
+        }
     </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,10 +26,10 @@
     <meta property="og:title" content="LOMBOK GARMENT DAN TEKSTIL - Konveksi Terpercaya">
     <meta property="og:description" content="Konveksi terpercaya untuk pakaian, tas, dan topi berkualitas tinggi di Lombok. Menerima pembuatan kaos, polo, jaket, almamater dengan harga terjangkau.">
     <meta property="og:type" content="website">
-<meta property="og:locale" content="id_ID">
-<link rel="canonical" href="https://www.lombokgarment.com/" />
+    <meta property="og:locale" content="id_ID">
+    <link rel="canonical" href="https://konveksilombokgarment.netlify.app/" />
     <meta property="og:image" content="./image/lombokgarment-logo (2).jpg">
-    <meta property="og:url" content="[Your Website URL]">
+    <meta property="og:url" content="https://konveksilombokgarment.netlify.app/">
 
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -57,7 +59,6 @@
     </script>
     <title>LOMBOK GARMENT DAN TEKSTIL</title>
     <link rel="icon" type="image/x-icon" href="./image/lombokgarment-logo (2).jpg">
-    <meta name="description" content="Lombok Garment - Pakaian, tas, dan topi berkualitas tinggi dan terjangkau dari Lombok, Indonesia. Konveksi terpercaya.">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -93,7 +94,7 @@
             <p class="lato-thin">Tempat terbaik untuk pakaian berkualitas tinggi dan terjangkau. Paling dipercaya. Paling dapat diandalkan.</p>
         </div>
       </section>
-      <section class="product-type">
+      <section class="product-type" id="jenis-produk">
         <div class="product-type-title mb-5">
           <h2 class="lato-regular">JENIS PRODUK</h2>
         </div>
@@ -223,6 +224,27 @@
           </div>
         </div>
       </section>
+        <section class="about" id="about">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <h2 class="lato-regular text-center mb-4">LOMBOK GARMENT DAN TEKSTIL</h2>
+                        <div class="about-text">
+                            <p class="lato-thin text-justify">
+                                Lombok Garment dan Tekstil merupakan produsen garmen terkemuka yang berlokasi strategis di Pulau Lombok,
+                                Indonesia. Berdiri dengan komitmen untuk menghadirkan produk tekstil berkualitas tinggi, kami telah melayani
+                                berbagai kebutuhan pakaian custom, mulai dari seragam korporat hingga merchandise promosi. Dengan pengalaman
+                                bertahun-tahun dalam industri garmen, kami menggabungkan keahlian tradisional dengan teknologi modern untuk
+                                menghasilkan produk yang memenuhi standar kualitas tertinggi. Dilengkapi dengan fasilitas produksi yang
+                                lengkap dan tim profesional yang berpengalaman, kami menawarkan layanan komprehensif mulai dari pemilihan
+                                bahan, desain, hingga produksi dengan memperhatikan setiap detail untuk memastikan kepuasan pelanggan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer class="footer bg-light text-center py-4 mt-5">
       <div class="container">
@@ -239,16 +261,12 @@
 </html>
 <script type="module">
     import { initGTM } from './js/gtm.js';
-    import { config } from './js/config.js';
 
     try {
-        if (!config?.gtmId) {
-            throw new Error('GTM ID is not configured');
-        }
         await initGTM();
         console.log('GTM initialized successfully');
     } catch (error) {
         console.error('Failed to initialize GTM:', error);
-        // Add appropriate error handling/reporting
     }
+
 </script>

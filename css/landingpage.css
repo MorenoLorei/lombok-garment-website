@@ -221,3 +221,28 @@ nav .navbar-nav .nav-link:hover {
 .contact-us a:hover{
     color: #1a3d50;
 }
+
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h2 {
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+

@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[context.production]
+  environment = { ENV_GTM_ID = "GTM-P9P76JBD" }
+s
