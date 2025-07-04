@@ -1,0 +1,14 @@
+{
+  "name": "lombok-garment-website",
+  "version": "1.0.0",
+  "description": "something, idk",
+  "main": "",
+  "scripts": {
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "Klimpfea",
+  "license": "ISC"
+}
+
+
