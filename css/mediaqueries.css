@@ -40,12 +40,13 @@
         font-size: clamp(0.9rem, 1vw, 2rem);
     }
     .contact-us-content h2 {
+        text-wrap: nowrap;
         text-align: center;
         font-size: clamp(1rem, 5vw, 6rem);
     }
     .contact-us-content p {
         text-align: center;
-        font-size: clamp(0.9rem, 1vw, 2rem);
+        font-size: clamp(0.5rem, 1vw, 1.5rem);
     }
     .contact-us-content a,
     .btn-primary {
