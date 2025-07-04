@@ -20,7 +20,7 @@ User-agent: SemrushBot
 Disallow: /
 
 # Sitemap
-Sitemap: https://www.lombokgarment.com/sitemap.xml
+Sitemap: https://konveksilombokgarment.netlify.app/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 10
