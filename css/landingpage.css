@@ -54,7 +54,7 @@ nav.navbar {
 
 nav .navbar-brand,
 nav .navbar-nav .nav-link {
-    margin: 0px 2rem;
+    margin: 0 2rem;
     color: #0b1215 !important;
     transition: 0.3s ease-in-out;
 }
@@ -73,7 +73,7 @@ nav .navbar-nav .nav-link:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     min-height: 100vh;
 }
 .home-content{
@@ -91,9 +91,8 @@ nav .navbar-nav .nav-link:hover {
 
 
 .product-type {
-    width: 100%;
-    text-align: center;
-    
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -137,7 +136,7 @@ nav .navbar-nav .nav-link:hover {
 
 .card {
     margin: 0 auto;
-    
+
     width: 100%;
     max-width: 350px;
     border-radius: 40px;
@@ -188,7 +187,7 @@ nav .navbar-nav .nav-link:hover {
 .material-color-list {
     display: flex;
     flex-direction: column;
-    
+
 }
 #lacoste{
     justify-content: center;
@@ -231,6 +230,9 @@ nav .navbar-nav .nav-link:hover {
     letter-spacing: 5px;
     margin-bottom: 2rem;
 }
+.about h4{
+    letter-spacing: 5px;
+}
 
 .about-text {
     max-width: 900px;
@@ -241,5 +243,3 @@ nav .navbar-nav .nav-link:hover {
 .text-justify {
     text-align: justify;
 }
-
-
